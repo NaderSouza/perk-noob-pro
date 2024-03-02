@@ -5,10 +5,23 @@ export type ButtonProps = ComponentProps<"button"> & {
   success?: boolean;
 };
 
+const names = ["Alice", "Bob", "Charlie", "David", "Emma"];
+
 export default function Button({ success = false, ...props }: ButtonProps) {
+  const generateRandomName = () => {
+    const randomIndex = Math.floor(Math.random() * names.length);
+    return names[randomIndex];
+  };
+
+  const handleClick = () => {
+    const randomName = generateRandomName();
+    alert(`Random Name: ${randomName}`);
+  };
+
   return (
     <button
       className={`rounded px-4 h-9 text-sm font-bold py-2 px-4 text-zinc-900 bg-bo2 hover:bg-bo2-dark`}
+      onClick={handleClick}
       {...props}
     >
       {props.children}
