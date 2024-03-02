@@ -1,5 +1,5 @@
 import { ComponentProps } from "react";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Skull } from "lucide-react";
 
 export type ButtonProps = ComponentProps<"button"> & {
   success?: boolean;
@@ -8,11 +8,11 @@ export type ButtonProps = ComponentProps<"button"> & {
 export default function Button({ success = false, ...props }: ButtonProps) {
   return (
     <button
-      className={`rounded px-4 h-9 text-sm font-medium text-zinc-900 bg-emerald-500 hover:bg-emerald-600`}
+      className={`rounded px-4 h-9 text-sm font-bold text-zinc-900 bg-bo2 hover:bg-bo2-dark`}
       {...props}
     >
       {props.children}
-      {success && <CheckCircle className="w-4 h-4 inline ml-1" />}
+      {success && <Skull className="w-4 h-4 inline ml-1" />}
     </button>
   );
 }

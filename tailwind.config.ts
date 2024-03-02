@@ -14,6 +14,7 @@ const config: Config = {
       },
       colors: {
         bo2: '#ec6f00',
+        'bo2-dark': '#D46300' 
       },
     },
   },
@@ -21,4 +22,3 @@ const config: Config = {
 };
 
 export default config;
-// sans: ["Inter", "sans-serif"],
