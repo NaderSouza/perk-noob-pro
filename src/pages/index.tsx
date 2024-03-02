@@ -25,7 +25,7 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="flex h-full justify-center items-center rounded-md px-4 py-1.5">
+        <div className="flex h-full justify-center items-center rounded-md px-4 py-1.5 ">
           <Button type="submit" success>
             Sortear
           </Button>

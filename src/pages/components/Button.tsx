@@ -8,7 +8,7 @@ export type ButtonProps = ComponentProps<"button"> & {
 export default function Button({ success = false, ...props }: ButtonProps) {
   return (
     <button
-      className={`rounded px-4 h-9 text-sm font-bold text-zinc-900 bg-bo2 hover:bg-bo2-dark`}
+      className={`rounded px-4 h-9 text-sm font-bold py-2 px-4 text-zinc-900 bg-bo2 hover:bg-bo2-dark`}
       {...props}
     >
       {props.children}
