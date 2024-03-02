@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<svg width="48" height="48" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <linearGradient id="ujNY4JcS9uLq8oPhXuc~za" x1="-3.2" x2="5.03" y1="-1.7" y2="3.2">
+
+  <stop offset="0.94" stop-color="#ec6f00"/>
+ </linearGradient>
+ <linearGradient id="ujNY4JcS9uLq8oPhXuc~zb" x1="-3.75" x2="4.47" y1="-2.03" y2="2.87">
+
+  <stop offset="0.94" stop-color="#ec6f00"/>
+ </linearGradient>
+ <g class="layer">
+  <title>Layer 1</title>
+  <polygon fill="url(#ujNY4JcS9uLq8oPhXuc~za)" id="svg_1" points="23.5,42.125 13.5,42.125 13.5,34.54600143432617 15.5,31.70400047302246 15.5,16.54599952697754 13.5,13.704000473022461 13.5,6.125 23.5,6.125 "/>
+  <polygon fill="url(#ujNY4JcS9uLq8oPhXuc~zb)" id="svg_2" points="25,42 35,42 35,34.42100143432617 33,31.57900047302246 33,16.42099952697754 35,13.579000473022461 35,6 25,6 " transform="matrix(1 0 0 1 0 0)"/>
+ </g>
+</svg>

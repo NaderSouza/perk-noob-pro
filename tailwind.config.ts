@@ -1,3 +1,4 @@
+import { Orbitron } from 'next/font/google';
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -9,12 +10,10 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Fira Code", "sans-serif"],
-        // sans: ["Inter", "sans-serif"],
-        black: ['blackOps2', 'sans-serif']
+        sans: ['Orbitron', 'sans-serif']
       },
       colors: {
-        woods: '#ec6f00',
+        bo2: '#ec6f00',
       },
     },
   },

@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'BO2';
+  src: url(/src/fonts/blackOps2.ttf);
+}
