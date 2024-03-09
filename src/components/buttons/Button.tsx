@@ -1,21 +1,31 @@
 import { ComponentProps } from "react";
 import { CheckCircle, Skull } from "lucide-react";
+import { VariantProps, tv } from "tailwind-variants";
 
 export type ButtonProps = ComponentProps<"button"> & {
   success?: boolean;
+  openModal?: () => void; // Adicionando a prop openModal
 };
 
 const names = ["Alice", "Bob", "Charlie", "David", "Emma"];
 
-export default function Button({ success = false, ...props }: ButtonProps) {
+export default function Button({
+  success = false,
+  openModal,
+  ...props
+}: ButtonProps) {
   const generateRandomName = () => {
     const randomIndex = Math.floor(Math.random() * names.length);
     return names[randomIndex];
   };
 
   const handleClick = () => {
-    const randomName = generateRandomName();
-    alert(`Random Name: ${randomName}`);
+    if (openModal) {
+      openModal(); // Chamando a função openModal para abrir o modal
+    } else {
+      const randomName = generateRandomName();
+      alert(`Random Name: ${randomName}`);
+    }
   };
 
   return (
@@ -41,6 +51,7 @@ export function ButtonModal({ success = false, ...props }: ButtonProps) {
     </button>
   );
 }
+
 export function ButtonModalCalc({ success = false, ...props }: ButtonProps) {
   return (
     <button
