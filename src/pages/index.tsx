@@ -7,7 +7,23 @@ import Modal from "../components/modals/Modal";
 
 const orbitron = Orbitron({ subsets: ["latin"] });
 
-const names = ["Alice", "Bob", "Charlie", "David", "Emma"];
+const names = [
+  "Faster Revive",
+  "More Headshot Damage",
+  "Stronger Barriers",
+  "Stronger Carpenter Barriers",
+  "200% Health",
+  "Red Insta-Kill",
+  "Refund on Perks",
+  "Mystery Box Upgrade",
+  "PhD Flopper",
+  "Half-off",
+  "Double Points",
+  "Tombstone",
+  "Extra Sniping Points",
+  "Double Pistol Points",
+  "Ray Gun Off The Wall",
+];
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,14 +64,14 @@ export default function Home() {
           </Button>
           <Modal isOpen={isOpen} closeModal={closeModal}>
             <div className="p-4">
-              <h1 className="text-lg font-bold mb-2">Nome Sorteado</h1>
+              <h1 className="text-lg font-bold mb-2">Perk Noob Pro Sorteado</h1>
               <p>{selectedName}</p>
-              <button
+              {/* <button
                 className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                 onClick={closeModal}
               >
                 Fechar Modal
-              </button>
+              </button> */}
             </div>
           </Modal>
         </div>

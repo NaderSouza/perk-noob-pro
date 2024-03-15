@@ -11,23 +11,25 @@ const Modal: React.FC<ModalProps> = ({ isOpen, closeModal, children }) => {
     <div
       className={`${
         isOpen
-          ? "opacity-100 pointer-events-auto"
-          : "opacity-0 pointer-events-none"
+          ? "opacity-100 pointer-events-auto transition-opacity duration-300"
+          : "opacity-0 pointer-events-none transition-opacity duration-300"
       } fixed z-10 inset-0 overflow-y-auto`}
     >
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="fixed inset-0 transition-opacity" aria-hidden="true">
+      <div className="flex items-center justify-center text-center min-h-screen">
+        <div className="fixed inset-0" aria-hidden="true">
           <div className="absolute inset-0"></div>
         </div>
 
-        <div className="bg-black text-zinc-50 rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg w-full">
-          {children}
-          <button
-            className="mt-2 mb-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded"
-            onClick={closeModal}
-          >
-            Fechar
-          </button>
+        <div className="bg-zinc-700 rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg w-full">
+          <div className="flex justify-end">
+            <button
+              className="text-white border-spacing-1 hover:text-blue-200 p-2"
+              onClick={closeModal}
+            >
+              Fechar
+            </button>
+          </div>
+          <div className="justify-center p-14">{children}</div>
         </div>
       </div>
     </div>

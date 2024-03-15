@@ -7,7 +7,23 @@ export type ButtonProps = ComponentProps<"button"> & {
   openModal?: () => void; // Adicionando a prop openModal
 };
 
-const names = ["Alice", "Bob", "Charlie", "David", "Emma"];
+const names = [
+  "Faster Revive",
+  "More Headshot Damage",
+  "Stronger Barriers",
+  "Stronger Carpenter Barriers",
+  "200% Health",
+  "Red Insta-Kill",
+  "Refund on Perks",
+  "Mystery Box Upgrade",
+  "PhD Flopper",
+  "Half-off",
+  "Double Points",
+  "Tombstone",
+  "Extra Sniping Points",
+  "Double Pistol Points",
+  "Ray Gun Off The Wall",
+];
 
 export default function Button({
   success = false,
